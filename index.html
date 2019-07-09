@@ -1,0 +1,460 @@
+<html>
+  <head>
+    <title>
+      Dashboard
+    </title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script>
+      function toggle() {
+        if (document.getElementById("sidebar").style.display != "none") {
+          document.getElementById("sidebar").style.display = "none";
+          document.getElementById("sidebar").style.transition =
+                "0.5s ease-in-out";
+          document.getElementById("main").style.paddingLeft = "0px";
+          document.getElementById("sidebar").style.transition =
+            "0.5s ease-in-out";
+        } else {
+          document.getElementById("sidebar").style.display = "block";
+          document.getElementById("main").style.paddingLeft = "250px";
+        }
+      }
+      function append() {}
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        <h1>GeekyAnts</h1>
+        <h4>Main</h4>
+        <ul class="sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <div class="sidebar-item">Dashboard</div>
+              <div class="notification">
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color:blueviolet;font-size: 24px;"
+                ></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <div class="sidebar-item">Calender</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope-o fa-icon" aria-hidden="true"></i>
+              <div class="sidebar-item">E-Mail</div>
+              <i
+                class="fa fa-chevron-right fa-right-icon "
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-cubes" aria-hidden="true"></i>
+              <div class="sidebar-item">UI Elements</div>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                style="font-size:16px; padding:3px; margin-left:auto;"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <div class="sidebar-item">Form</div>
+              <div class="notification">
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color:cyan;font-size: 22px;"
+                ></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pie-chart" aria-hidden="true"></i>
+              <div class="sidebar-item">Charts</div>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                style="font-size:16px; padding:3px; margin-left:auto;"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-table" aria-hidden="true"></i>
+              <div class="sidebar-item">Tables</div>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                style="font-size:16px; padding:3px; margin-left:auto;"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-smile-o" aria-hidden="true"></i>
+              <div class="sidebar-item">Icons</div>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                style="font-size:16px; padding:3px; margin-left:auto;"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-map" aria-hidden="true"></i>
+              <div class="sidebar-item">Map</div>
+              <div class="notification">
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color:crimson;font-size: 22px;"
+                ></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main" id="main">
+        <header>
+          <a href="#" id="menubar" onclick="toggle();"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <select>
+            <option value="Create">Create</option>
+            <option value="Search">Search</option>
+            <option value="Remove">Remove</option>
+            <option value="Out">Out</option>
+          </select>
+          <input class="searchbar" type="text" placeholder="Search..." />
+          <select>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Espanyol">Espanol</option>
+            <option value="German">German</option>
+          </select>
+          <a href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+          <a href="#"> <i class="fa fa-circle" aria-hidden="true"></i></a>
+        </header>
+        <div class="dashboard-heading">
+          <div class="heading-container">
+            <h1>Dashboard</h1>
+            <h4>Welcome to Veltrix Dashboard</h4>
+          </div>
+          <div class="side-button">
+            <button class="settings">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+              Settings
+            </button>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-upper-part">
+              <img src="img/icon1.png" />
+              <div class="card-middle-text">
+                <div style="font-size:16px; color:white; margin:5px 0px;">
+                  ORDERS
+                </div>
+                <div style="font-size: 22px; color:white; margin:5px 0px;">
+                  1,664
+                </div>
+              </div>
+              <div class="card-icons">
+                <div class="bookmark-container">
+                  <div class="bookmark">
+                    34%
+                  </div>
+                </div>
+                <div class="arrow-container">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="lower-part-container">
+              <div class="card-lower-part">
+                <div class="card-lower-text">
+                  Since last month
+                </div>
+                <div class="card-lower-arrow">
+                  <a href="#"
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-upper-part">
+              <img src="img/icon2.png" />
+              <div class="card-middle-text">
+                <div style="font-size:16px; color:white; margin:5px 0px;">
+                  REVENUE
+                </div>
+                <div style="font-size: 22px; color:white; margin:5px 0px;">
+                  28,653
+                </div>
+              </div>
+              <div class="card-icons">
+                <div class="bookmark-container">
+                  <div class="bookmark" style="background: #ec4561;">
+                    -28%
+                  </div>
+                </div>
+                <div class="arrow-container">
+                  <i
+                    class="fa fa-arrow-down"
+                    aria-hidden="true"
+                    style="color:#ec4561;"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="lower-part-container">
+              <div class="card-lower-part">
+                <div class="card-lower-text">
+                  Since last month
+                </div>
+                <div class="card-lower-arrow">
+                  <a href="#"
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-upper-part">
+              <img src="img/icon3.png" />
+              <div class="card-middle-text">
+                <div style="font-size:16px; color:white; margin:5px 0px;">
+                  AVERAGE
+                </div>
+                <div style="font-size: 22px; color:white; margin:5px 0px;">
+                  15.8
+                </div>
+              </div>
+              <div class="card-icons">
+                <div class="bookmark-container">
+                  <div class="bookmark" style="background:#38a5f8">
+                    00%
+                  </div>
+                </div>
+                <div class="arrow-container">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="lower-part-container">
+              <div class="card-lower-part">
+                <div class="card-lower-text">
+                  Since last month
+                </div>
+                <div class="card-lower-arrow">
+                  <a href="#"
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-upper-part">
+              <img src="img/icon4.png" />
+              <div class="card-middle-text">
+                <div style="font-size:16px; color:white; margin:5px 0px;">
+                  PRODUCT
+                </div>
+                <div style="font-size: 22px; color:white; margin:5px 0px;">
+                  2,436
+                </div>
+              </div>
+              <div class="card-icons">
+                <div class="bookmark-container">
+                  <div class="bookmark" style="background:#f8b425">
+                    84%
+                  </div>
+                </div>
+                <div class="arrow-container">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="lower-part-container">
+              <div class="card-lower-part">
+                <div class="card-lower-text">
+                  Since last month
+                </div>
+                <div class="card-lower-arrow">
+                  <a href="#"
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-chat">
+          <div class="table-container">
+            <table cellspacing="0">
+              <tr>
+                <th colspan="6">Latest Transactions</th>
+              </tr>
+              <tr>
+                <td>id(#)</td>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td colspan="2">Status</td>
+              </tr>
+              <tr>
+                <td>14256</td>
+                <td>Lavi</td>
+                <td>15/7/2019</td>
+                <td>89$</td>
+                <td><button class="delivered">Delivered</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14257</td>
+                <td>Ashish</td>
+                <td>15/7/2019</td>
+                <td>34$</td>
+                <td><button class="pending">Pending</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14258</td>
+                <td>Sankalp</td>
+                <td>16/7/2019</td>
+                <td>35$</td>
+                <td><button class="cancel">Canceled</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14259</td>
+                <td>Ayush</td>
+                <td>16/7/2019</td>
+                <td>91$</td>
+                <td><button class="pending">Pending</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14260</td>
+                <td>Saumya</td>
+                <td>16/7/2019</td>
+                <td>47$</td>
+                <td><button class="delivered">Delivered</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14261</td>
+                <td>Kuldeep</td>
+                <td>17/7/2019</td>
+                <td>77$</td>
+                <td><button class="pending">Pending</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14262</td>
+                <td>Wheel</td>
+                <td>18/7/2019</td>
+                <td>27$</td>
+                <td><button class="cancel">Canceled</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14263</td>
+                <td>Richard</td>
+                <td>19/7/2019</td>
+                <td>27$</td>
+                <td><button class="delivered">Delivered</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14264</td>
+                <td>Williamson</td>
+                <td>19/7/2019</td>
+                <td>96$</td>
+                <td><button class="pending">Pending</button></td>
+                <td>
+                  <button class="edit-button">Edit</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="chat-container">
+            <div class="chats">
+              <h3>Chat</h3>
+              <div class="chat-bubble">
+                <img src="img/icon.png" />
+                <div class="chat-bubble-text-container">
+                  <div class="chat-bubble-text">
+                    <h3>Name</h3>
+                    jfdakkfd khdkf kj df jdj jd j ekufg hgadk egk bkeug
+                  </div>
+                </div>
+              </div>
+              <div class="chat-bubble receiver">
+                <img src="img/icon.png" />
+                <div class="chat-bubble-text-container">
+                  <div class="chat-bubble-text">
+                    <h3>Name</h3>
+                    jfdakkfd khdkf kj df jdj jd j ekufg hgadk egk bkeug
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-container">
+              <div class="input-box-container">
+                <input class="input-box" placeholder="type message here" />
+              </div>
+              <div class="send-icon">
+                <i
+                  class="fa fa-paper-plane"
+                  aria-hidden="true"
+                  onclick="append();"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
